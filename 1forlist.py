@@ -1,6 +1,6 @@
 list1=['ab','cd','ef','gh','ac','be']
-
-print (list1[2].title())
 list1.sort()
 list1.append('lm')
-print (list1) 
+print (list1)
+list1[1]='aaa'
+print (list1)
