@@ -1,2 +1,2 @@
 import random
-print (random.random())
+num=[]
