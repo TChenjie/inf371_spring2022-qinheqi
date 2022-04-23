@@ -6,3 +6,4 @@ thisdic={
     "wisdom":20,
     "charisma":15
 }
+print(thisdic)
