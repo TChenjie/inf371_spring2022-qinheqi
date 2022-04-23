@@ -2,4 +2,5 @@ isRunning=True
 while(isRunning):
     print("would you want to quit")
     a=input("")
-    if a=="q"
+    if a=="q":
+        isRunning=False
