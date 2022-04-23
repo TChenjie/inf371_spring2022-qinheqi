@@ -4,3 +4,5 @@ while(isRunning):
     a=input("")
     if a=="q":
         isRunning=False
+    if a=="Q":
+        isRunning=False
