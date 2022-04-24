@@ -7,3 +7,6 @@ thisdic={
     "wisdom",
     "charisma"
 }
+value={
+    
+}
