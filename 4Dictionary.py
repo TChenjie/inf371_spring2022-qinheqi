@@ -7,3 +7,5 @@ thisdic={
     "charisma":15
 }
 print(thisdic)
+for a in thisdic.values():
+    print (a)
