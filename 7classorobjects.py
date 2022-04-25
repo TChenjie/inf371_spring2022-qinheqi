@@ -28,3 +28,6 @@ class Character:
          self.heal1=heal1
          self.hitpoints+=heal1
          return self.hitpoints
+     def main():
+         my__new__character=Character(15,15,15,15,15,15)
+         print(my__new__character.printststs())
