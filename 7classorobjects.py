@@ -16,3 +16,5 @@ class Character:
         return print_hitpoints
      def attack(self):
         return random.randrange(1,self.strength)
+     def defense(self,defense1):
+         
