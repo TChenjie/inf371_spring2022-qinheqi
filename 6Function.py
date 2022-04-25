@@ -4,3 +4,5 @@ def temper(temp):
 def main():
     global q
     q=input("Type 'p' to exit:   ")
+    while(q!="p"):
+        Ctemper=float(input("Please input Celsius temperature:   "))
