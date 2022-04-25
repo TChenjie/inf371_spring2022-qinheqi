@@ -8,3 +8,6 @@ class Character:
         self.wisdom=wisdom
         self.charisma=charisma
         self.hitpoints=constitution*30+50
+     def printststs(self):
+        print_stats=f"player stats are {self.strength},{self.dexterity},{self.constitution},{self.intelligence},{self.wisdom},{self.charisma}"
+        return print_stats
