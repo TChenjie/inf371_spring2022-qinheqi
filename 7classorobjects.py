@@ -33,3 +33,4 @@ class Character:
          print(my__new__character.printststs())
          print(my__new__character.hitpoints1())
          att= my__new__character.attack()
+         print(my__new__character.defense(att))
