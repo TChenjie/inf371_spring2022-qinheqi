@@ -14,3 +14,5 @@ class Character:
      def hitpoints1(self):
         print_hitpoints=f"hitpoint is {self.hitpoints}"
         return print_hitpoints
+     def attack(self):
+        return random.randrange(1,self.strength)
