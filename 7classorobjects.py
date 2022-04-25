@@ -17,4 +17,10 @@ class Character:
      def attack(self):
         return random.randrange(1,self.strength)
      def defense(self,defense1):
-         
+          self.defense1=defense1
+          a=random.randrange(1,20)
+          if(a<self.dexterity):
+             return 0
+          else:
+             self.attack-=defense1
+             return self.attack
