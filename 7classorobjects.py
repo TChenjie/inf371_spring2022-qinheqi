@@ -24,3 +24,7 @@ class Character:
           else:
              self.attack-=defense1
              return self.attack
+     def heal(self,heal1):
+         self.heal1=heal1
+         self.hitpoints+=heal1
+         return self.hitpoints
