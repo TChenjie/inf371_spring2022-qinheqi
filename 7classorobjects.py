@@ -1,1 +1,2 @@
 import random
+class Character:
