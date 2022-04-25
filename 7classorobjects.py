@@ -11,3 +11,6 @@ class Character:
      def printststs(self):
         print_stats=f"player stats are {self.strength},{self.dexterity},{self.constitution},{self.intelligence},{self.wisdom},{self.charisma}"
         return print_stats
+     def hitpoints1(self):
+        print_hitpoints=f"hitpoint is {self.hitpoints}"
+        return print_hitpoints
