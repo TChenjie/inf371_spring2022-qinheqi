@@ -31,3 +31,4 @@ class Character:
      def main():
          my__new__character=Character(15,15,15,15,15,15)
          print(my__new__character.printststs())
+         print(my__new__character.hitpoints1())
