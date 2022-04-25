@@ -8,4 +8,7 @@ def main():
         Ctemper=float(input("Please input Celsius temperature:   "))
         print(f"The  Fahrenheit temperature is: {temper(Ctemper)}")
         q=input("Type 'p' to exit:   ")
-     
+        if(q=="p"):
+             print("Thank for use")
+if __name__ == '__main__':
+    main()
