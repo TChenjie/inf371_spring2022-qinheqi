@@ -7,3 +7,5 @@ def main():
     while(q!="p"):
         Ctemper=float(input("Please input Celsius temperature:   "))
         print(f"The  Fahrenheit temperature is: {temper(Ctemper)}")
+        q=input("Type 'p' to exit:   ")
+     
