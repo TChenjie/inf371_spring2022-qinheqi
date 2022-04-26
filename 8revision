@@ -1,0 +1,38 @@
+The part of original code for
+def defense(self,defense1):
+          self.defense1=defense1
+          a=random.randrange(1,20)
+          if(a<self.dexterity):
+             return 0
+          else:
+             self.attack-=defense1
+             return self.attack
+Second Edition code
+def defense(self,defense1):
+          self.defense1=defense1
+          a=random.randrange(1,20)
+          if(a<self.dexterity):
+             return 0
+          else:
+             b=self.attack()
+             b=b-defense1
+             return b
+Modified for
+def defense(self,defense1):
+          self.defense1=defense1
+          a=random.randrange(1,20)
+          if(a<self.dexterity):
+             return 0
+          else:
+             b=0
+             b=self.attack()
+             b=b-defense1
+             return b
+Error description:
+There are two problems with original code
+1.In the second edition code Parameter b is not declared in advance.This makes the system prone to errors.
+2.let self.attack operate
+
+Modify the description:
+1.statement b=0
+2.add ()behind self.attack
