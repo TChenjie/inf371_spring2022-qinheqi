@@ -8,12 +8,11 @@ class Character:
         self.wisdom=wisdom
         self.charisma=charisma
         self.hitpoints=constitution*30+50
+
      def printststs(self):
-        print_stats=f"player stats are {self.strength},{self.dexterity},{self.constitution},{self.intelligence},{self.wisdom},{self.charisma}"
-        return print_stats
+        print(f"player stats are {self.strength},{self.dexterity},{self.constitution},{self.intelligence},{self.wisdom},{self.charisma}")
      def hitpoints1(self):
-        print_hitpoints=f"hitpoint is {self.hitpoints}"
-        return print_hitpoints
+         print(f"hitpoint is {self.hitpoints}")
      def attack(self):
         attack1=random.randrange(1,self.strength)
         return attack1
@@ -28,9 +27,11 @@ class Character:
              b=b-defense1
              return b
      def heal(self,heal1):
-         self.heal1=heal1
+         self.heal1=heal1 
          self.hitpoints+=heal1
          return self.hitpoints
+
+             
 def main():
     my__new__character=Character(15,15,1,15,15,15)
     print(my__new__character.printststs())
@@ -40,6 +41,8 @@ def main():
     print(my__new__character.defense(att))
     print(my__new__character.defense(att))
     print(my__new__character.heal(20))
+    
 
 if __name__ == '__main__':
     main()
+        
