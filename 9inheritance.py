@@ -37,6 +37,11 @@ class MagicCharacter(Character):
      def printmagicchar(self):
          print(f"the value of mana is{self.mana}")
          super().printststs
+     def magicMissile(self):
+         a=0
+         a=random.randrange(5,10)
+         self.mana-=5
+         return a
 
 def main():
     my__new__character=Character(15,15,1,15,15,15)
