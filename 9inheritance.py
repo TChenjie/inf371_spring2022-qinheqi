@@ -60,7 +60,7 @@ def main():
     print(my__new__character.defense(att))
     print(my__new__character.heal(20))
     my__new__Magicman=MagicCharacter(15,10,1,15,15,15)
-    
+    my__new__Magicman.printmagicchar
 
 if __name__ == '__main__':
     main()
