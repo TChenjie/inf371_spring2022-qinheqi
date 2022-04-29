@@ -31,7 +31,7 @@ class Character:
          self.hitpoints+=heal1
          return self.hitpoints
 class MagicCharacter(Character):
-
+     def __init__(self,strength, dexterity, constitution, intelligence, wisdom, charisma):
              
 def main():
     my__new__character=Character(15,15,1,15,15,15)
