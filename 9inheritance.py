@@ -42,6 +42,11 @@ class MagicCharacter(Character):
          a=random.randrange(5,10)
          self.mana-=5
          return a
+     def fireball(self):
+         a=0
+         a=random.randrange(10,20)
+         self.mana-=10
+         return a
 
 def main():
     my__new__character=Character(15,15,1,15,15,15)
