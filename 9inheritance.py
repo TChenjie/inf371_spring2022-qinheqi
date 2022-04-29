@@ -47,6 +47,8 @@ class MagicCharacter(Character):
          a=random.randrange(10,20)
          self.mana-=10
          return a
+     def healMana(self,heal2):
+         self.mana+=heal2
 
 def main():
     my__new__character=Character(15,15,1,15,15,15)
