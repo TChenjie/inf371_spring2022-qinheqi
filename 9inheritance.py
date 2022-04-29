@@ -30,6 +30,7 @@ class Character:
          self.heal1=heal1 
          self.hitpoints+=heal1
          return self.hitpoints
+class MagicCharacter(Character):
 
              
 def main():
