@@ -33,7 +33,7 @@ class Character:
 class MagicCharacter(Character):
      def __init__(self,strength, dexterity, constitution, intelligence, wisdom, charisma):
          super().__init__(strength, dexterity, constitution, intelligence, wisdom, charisma)
-      
+         self.mana=self.intelligence*30+50
 def main():
     my__new__character=Character(15,15,1,15,15,15)
     print(my__new__character.printststs())
