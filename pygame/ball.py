@@ -11,4 +11,5 @@ facespeed=[5,5]
 class unit():
     def __init__(self,file,screenSize,speed):
         self.picture=pygame.image.load(file)
+        self.rect=self.picture.get_rect()
         
