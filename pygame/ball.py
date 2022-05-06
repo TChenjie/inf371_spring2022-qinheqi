@@ -7,3 +7,4 @@ black=(0,0,0)
 white=(255,255,255)
 blue=(0,0,120)
 backgroundClolor=(50,50,50)
+facespeed=[5,5]
