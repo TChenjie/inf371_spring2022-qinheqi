@@ -10,4 +10,5 @@ backgroundClolor=(50,50,50)
 facespeed=[5,5]
 class unit():
     def __init__(self,file,screenSize,speed):
+        self.picture=pygame.image.load(file)
         
