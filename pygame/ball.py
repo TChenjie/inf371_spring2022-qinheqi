@@ -14,3 +14,4 @@ class unit():
         self.rect=self.picture.get_rect()
         self.height=screenSize[0]
         self.weight=screenSize[1]
+        self.speed=speed
