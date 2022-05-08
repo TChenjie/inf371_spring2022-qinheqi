@@ -1,4 +1,4 @@
-import pygame
+import pygame,random
 pygame.init()
 
 size=width,height=640,480
@@ -15,3 +15,4 @@ class unit():
         self.height=screenSize[0]
         self.weight=screenSize[1]
         self.speed=speed
+        self.randomPosition()
