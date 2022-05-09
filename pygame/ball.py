@@ -16,3 +16,7 @@ class unit():
         self.weight=screenSize[1]
         self.speed=speed
         self.randomPosition()
+testplace=pygame.Surface((50,50))
+testRect=pygame.Surface((0,0,50,50))
+test=pygame.draw.rect(testplace,blue,testRect)
+
