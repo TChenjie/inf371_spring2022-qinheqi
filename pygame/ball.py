@@ -17,6 +17,8 @@ class unit():
         self.speed=speed
         self.randomPosition()
 testplace=pygame.Surface((50,50))
-testRect=pygame.Surface((0,0,50,50))
+testRect=pygame.rect(0,0,50,50)
 test=pygame.draw.rect(testplace,blue,testRect)
+ball=pygame.image.load('intro_ball.gif')
+
 
