@@ -21,7 +21,8 @@ class unit():
         self.rect=self.rect.move(self.speed)
         if self.rect.left<0 or self.rect.ringht>self.weight:
             self.speed[0]=-self.speed[0]
-        
+        if self.rect.top<0 or self.rect.bottom>self.height: 
+            self.speed[1]=-self.speed[1] 
 
 testplace=pygame.Surface((50,50))
 testRect=pygame.Rect(0,0,50,50)
