@@ -1,7 +1,8 @@
 import pygame,random
 pygame.init()
 
-size=width,height=640,480
+size1=width,height=640,480
+size2=width,height=800,600
 ballspeed=[2,2]
 black=(0,0,0)
 white=(255,255,255)
@@ -19,6 +20,8 @@ class unit():
 testplace=pygame.Surface((50,50))
 testRect=pygame.Rect(0,0,50,50)
 test=pygame.draw.rect(testplace,blue,testRect)
-ball=("intro_ball.gif",size,ballspeed)
+ball=("intro_ball.gif",size1,ballspeed)
+smiley=("smiley.png",size2,ballspeed)
+
 
 
