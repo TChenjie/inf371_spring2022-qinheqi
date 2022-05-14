@@ -23,7 +23,9 @@ class unit():
             self.speed[0]=-self.speed[0]
         if self.rect.top<0 or self.rect.bottom>self.height: 
             self.speed[1]=-self.speed[1] 
-
+    def randomPosition(self):
+        self.rect.x=random.randint(0,self.weight)
+        self.rect.y=random.randint(0,self.height)
 testplace=pygame.Surface((50,50))
 testRect=pygame.Rect(0,0,50,50)
 test=pygame.draw.rect(testplace,blue,testRect)
