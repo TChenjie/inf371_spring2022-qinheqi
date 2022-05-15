@@ -45,4 +45,7 @@ while key:
             if event.buttons[0]==1:
                 face_rect=face_rect.move(event.pos[0]-face_rect.x,event.pos[1]-face_rect)
 ball_rect=ball_rect.move(x,y)
-      
+if ball_rect.left < 0 or ball_rect.right > 50:
+     x = -x
+if ball_rect.top < 0 or ball_rect.bottom > 50:
+     y = -y
