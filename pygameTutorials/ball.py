@@ -27,4 +27,17 @@ while key:
             pygame.quit()
             break
         if event.type==pygame.KEYDOWN:
-            
+            if event.key==pygame.K_LEFT:
+                if x>0:
+                    x-=1
+                if x<=0:
+                    x+=1
+            if event.key==pygame.K_RIGHT:
+                x=x+1 if x>=0 else x-1
+            if event.key==pygame.K_UP:
+                y=y+1 if y>=0 else y-1
+            if event.key==pygame.K_DOWN:
+                if y>0:
+                    y-=1
+                if y<=0:
+                    y+=1  
