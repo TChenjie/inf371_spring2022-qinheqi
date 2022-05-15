@@ -31,6 +31,6 @@ testRect=pygame.Rect(0,0,50,50)
 test=pygame.draw.rect(testplace,blue,testRect)
 ball=("intro_ball.gif",size1,ballspeed)
 smiley=("smiley.png",size2,ballspeed)
-
+yyue=pygame.mixer.music.load("m87.mp3")
 
 
