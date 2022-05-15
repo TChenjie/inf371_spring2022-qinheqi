@@ -1,3 +1,4 @@
+from turtle import Turtle
 import pygame,random
 pygame.init()
 
@@ -13,3 +14,16 @@ yyue=pygame.mixer.music.load("m87.mp3")
 ball=pygame.image.load("intro_ball.gif")
 face=pygame.image.load("smiley.png")
 ball_rect=ball.get_rect()
+face_rect=face.get_rect()
+still=False
+key=Turtle
+x=1
+y=1
+number=0
+while key:
+    for event in pygame.event.get():
+        if event.type==pygame.QUIT:
+            key=False
+            pygame.quit()
+            break
+        
