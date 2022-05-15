@@ -44,17 +44,21 @@ while key:
         if event.type == pygame.MOUSEMOTION:
             if event.buttons[0]==1:
                 face_rect=face_rect.move(event.pos[0]-face_rect.x,event.pos[1]-face_rect)
-ball_rect=ball_rect.move(x,y)
-face_rect=face_rect.move(x,y)
-if ball_rect.left < 0 or ball_rect.right > 50:
-     x = -x
-if ball_rect.top < 0 or ball_rect.bottom > 50:
-     y = -y
-     ball_rect=ball_rect.move(x,y)
-if face_rect.left < 0 or face_rect.right > 50:
-     x = -x
-if face_rect.top < 0 or face_rect.bottom > 50:
-     y = -y
-if pygame.Rect.colliderect(ball_rect, face_rect)and ball_rect.bottom - face_rect.top <= 1
+    ball_rect=ball_rect.move(x,y)
+    face_rect=face_rect.move(x,y)
+    if ball_rect.left < 0 or ball_rect.right > 50:
+         x = -x
+    if ball_rect.top < 0 or ball_rect.bottom > 50:
         y = -y
-        number+=1
+        ball_rect=ball_rect.move(x,y)
+    if face_rect.left < 0 or face_rect.right > 50:
+        x = -x
+    if face_rect.top < 0 or face_rect.bottom > 50:
+        y = -y
+    if pygame.Rect.colliderect(ball_rect, face_rect)and ball_rect.bottom - face_rect.top <= 1:
+            y = -y
+            number+=1
+    test.blit(ball,ball_rect)
+    test.blit(face,face_rect)
+    pygame.display.update()
+pygame.quit()
