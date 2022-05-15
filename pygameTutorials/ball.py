@@ -6,10 +6,7 @@ pygame.init()
 black=(0,0,0)
 white=(255,255,255)
 blue=(0,0,120)
-backgroundClolor=(50,50,50)
-testplace=pygame.Surface((50,50))
-testRect=pygame.Rect(0,0,50,50)
-test=pygame.draw.rect(testplace,blue,testRect)
+sceeen = pygame.display.set_mode((800,800))
 yyue=pygame.mixer.music.load("m87.mp3")
 ball=pygame.image.load("intro_ball.gif")
 face=pygame.image.load("smiley.png")
@@ -44,8 +41,9 @@ while key:
         if event.type == pygame.MOUSEMOTION:
             if event.buttons[0]==1:
                 face_rect=face_rect.move(event.pos[0]-face_rect.x,event.pos[1]-face_rect)
-    ball_rect=ball_rect.move(x,y)
-    face_rect=face_rect.move(x,y)
+            ball_rect=ball_rect.move(x,y)
+            face_rect=face_rect.move(x,y)
+    sceeen.fill((250,150,180))
     if ball_rect.left < 0 or ball_rect.right > 50:
          x = -x
     if ball_rect.top < 0 or ball_rect.bottom > 50:
@@ -58,7 +56,7 @@ while key:
     if pygame.Rect.colliderect(ball_rect, face_rect)and ball_rect.bottom - face_rect.top <= 1:
             y = -y
             number+=1
-    test.blit(ball,ball_rect)
-    test.blit(face,face_rect)
+    sceeen.blit(ball,ball_rect)
+    sceeen.blit(face,face_rect)
     pygame.display.update()
 pygame.quit()
