@@ -12,4 +12,4 @@ test=pygame.draw.rect(testplace,blue,testRect)
 yyue=pygame.mixer.music.load("m87.mp3")
 ball=pygame.image.load("intro_ball.gif")
 face=pygame.image.load("smiley.png")
-
+ball_rect=ball.get_rect()
