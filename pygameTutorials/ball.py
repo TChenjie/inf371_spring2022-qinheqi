@@ -10,6 +10,6 @@ testplace=pygame.Surface((50,50))
 testRect=pygame.Rect(0,0,50,50)
 test=pygame.draw.rect(testplace,blue,testRect)
 yyue=pygame.mixer.music.load("m87.mp3")
-
+ball=pygame.image.load("intro_ball.gif")
 
 
