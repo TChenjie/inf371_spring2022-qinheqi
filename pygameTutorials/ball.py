@@ -26,4 +26,5 @@ while key:
             key=False
             pygame.quit()
             break
-        
+        if event.type==pygame.KEYDOWN:
+            
