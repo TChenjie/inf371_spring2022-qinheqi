@@ -41,3 +41,7 @@ while key:
                     y-=1
                 if y<=0:
                     y+=1  
+        if event.type == pygame.MOUSEMOTION:
+            if event.buttons[0]==1:
+                ball_rect=ball_rect.move(event.pos[0]-ball_rect.x,event.pos[1]-ball_rect.y)
+            
