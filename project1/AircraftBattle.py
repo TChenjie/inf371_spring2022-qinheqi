@@ -14,3 +14,4 @@ elif(Hard=="hard"):
 else:
     print("input error ！")
     pygame.quit()
+font1 = pygame.font.SysFont("kaiti", 30)
