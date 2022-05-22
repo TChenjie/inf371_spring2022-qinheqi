@@ -1,8 +1,8 @@
 from turtle import Turtle
 import pygame,random
 pygame.init()
-
-
+yyue= pygame.mixer.music.load("../image/Saiakoup - Crilwa.mp3")#添加背景音乐
+pygame.mixer.music.play(-1)#播放音乐
 black=(0,0,0)
 white=(255,255,255)
 blue=(0,0,120)
@@ -58,5 +58,6 @@ while key:
             number+=1
     sceeen.blit(ball,ball_rect)
     sceeen.blit(face,face_rect)
+
     pygame.display.update()
 pygame.quit()
