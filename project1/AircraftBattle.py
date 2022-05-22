@@ -15,3 +15,4 @@ else:
     print("input error ！")
     pygame.quit()
 font1 = pygame.font.SysFont("kaiti", 30)
+font2 = pygame.font.SysFont("kaiti", 30)
