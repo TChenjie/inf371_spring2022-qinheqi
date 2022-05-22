@@ -9,3 +9,5 @@ if(Hard=="easy"):
     dif=5
 elif(Hard=="medium"):
     dif=15
+elif(Hard=="hard"):
+    dif=25
