@@ -18,3 +18,4 @@ font1 = pygame.font.SysFont("kaiti", 30)
 font2 = pygame.font.SysFont("kaiti", 30)
 score = 0   
 fighter = 3
+Myplane_rect=pygame.Rect(100,500,60,60)
