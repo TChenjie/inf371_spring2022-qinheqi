@@ -22,3 +22,5 @@ Myplane_rect=pygame.Rect(100,500,60,60)
 MY_ENDEVENT1 = pygame.USEREVENT + 1  
 MY_ENDEVENT2 = pygame.USEREVENT + 1  
 MY_ENDEVENT3 = pygame.USEREVENT + 1  
+if Hard=="easy":
+    bgm1= pygame.mixer.music.load("zhou.mp3")
