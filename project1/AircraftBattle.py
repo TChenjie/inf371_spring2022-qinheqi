@@ -11,3 +11,6 @@ elif(Hard=="medium"):
     dif=15
 elif(Hard=="hard"):
     dif=25
+else:
+    print("input error ！")
+    pygame.quit()
