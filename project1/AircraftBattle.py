@@ -29,3 +29,8 @@ if Hard=="easy":
 if Hard=="medium":
     bgm2= pygame.mixer.music.load("huoyuanjia.mp3")
     pygame.mixer.music.play()#播放音乐
+    pygame.mixer.music.set_endevent(MY_ENDEVENT2)
+if Hard=="hard":
+    bgm3= pygame.mixer.music.load("CompendiumOfMateriaMedica.mp3")
+    pygame.mixer.music.play()#播放音乐
+    pygame.mixer.music.set_endevent(MY_ENDEVENT3)
