@@ -39,3 +39,4 @@ class Background():
         self.back = pygame.image.load("3.png")
         self.back_rect = self.back.get_rect()
         self.back_rect.y = is_alt
+    def update(self):
