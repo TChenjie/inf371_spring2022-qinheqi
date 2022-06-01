@@ -48,3 +48,4 @@ class Background():
 Enemy_x=random.randint(0,300)
 jiange1=random.randint(60,200)
 jiange2=random.randint(60,200)
+screen = pygame.display.set_mode((480, 700))
