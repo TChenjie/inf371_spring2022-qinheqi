@@ -6,11 +6,11 @@ print("medium\n")
 print("hard\n")
 Hard=input("请选择难度")
 if(Hard=="easy"):
-    dif=5
+    dif=2
 elif(Hard=="medium"):
-    dif=15
+    dif=5
 elif(Hard=="hard"):
-    dif=25
+    dif=8
 else:
     print("input error ！")
     pygame.quit()
@@ -26,3 +26,4 @@ if Hard=="easy":
     bgm1= pygame.mixer.music.load("zhou.mp3")
     pygame.mixer.music.play()
     pygame.mixer.music.set_endevent(MY_ENDEVENT1)
+
