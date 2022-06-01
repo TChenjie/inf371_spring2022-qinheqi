@@ -35,9 +35,11 @@ if Hard=="hard":
     pygame.mixer.music.play()#播放音乐
     pygame.mixer.music.set_endevent(MY_ENDEVENT3)
 class Background():
-    def __init__(self, is_alt = 0):
+    def __init__(self, is_alt = -1000):
         self.back = pygame.image.load("3.png")
         self.back_rect = self.back.get_rect()
         self.back_rect.y = is_alt
     def update(self):
         self.back_rect.y += 1
+        if self.back_rect.centery >= 1000:
+            self.back_rect.y = -1000
