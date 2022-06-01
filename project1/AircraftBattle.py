@@ -45,3 +45,4 @@ class Background():
             self.back_rect.y = -1000
     def draw(self):
         screen.blit(self.back,self.back_rect)
+Enemy_x=random.randint(0,300)
