@@ -40,3 +40,4 @@ class Background():
         self.back_rect = self.back.get_rect()
         self.back_rect.y = is_alt
     def update(self):
+        self.back_rect.y += 1
