@@ -47,3 +47,4 @@ class Background():
         screen.blit(self.back,self.back_rect)
 Enemy_x=random.randint(0,300)
 jiange1=random.randint(60,200)
+jiange2=random.randint(60,200)
