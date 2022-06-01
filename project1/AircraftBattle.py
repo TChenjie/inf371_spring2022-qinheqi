@@ -43,3 +43,5 @@ class Background():
         self.back_rect.y += 1
         if self.back_rect.centery >= 1000:
             self.back_rect.y = -1000
+    def draw(self):
+        screen.blit(self.back,self.back_rect)
