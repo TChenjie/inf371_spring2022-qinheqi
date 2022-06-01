@@ -27,3 +27,5 @@ if Hard=="easy":
     pygame.mixer.music.play()
     pygame.mixer.music.set_endevent(MY_ENDEVENT1)
 if Hard=="medium":
+    bgm2= pygame.mixer.music.load("huoyuanjia.mp3")
+    pygame.mixer.music.play()#播放音乐
