@@ -75,3 +75,10 @@ Myplane = pygame.image.load("1.gif")
 # Draw bullet image
     # 1> Loading bullet images
 bulte = pygame.image.load("4.gif")
+# Draw an image of enemy
+    # 1> Load enemy1 plane image
+Enemy1 = pygame.image.load("2.gif")
+    # 2> Load enemy2 plane image
+Enemy2 = pygame.image.load("2.gif")
+    # 2> Load enemy3 plane image
+Enemy3 = pygame.image.load("2.gif")
