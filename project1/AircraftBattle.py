@@ -125,8 +125,20 @@ while True:
     if Hard=="medium":
         # Draw an image of enemy enemy1
         screen.blit(Enemy1, Enemy1_rect)
-        # Draw an image of enemy enemy1
+        # Draw an image of enemy enemy2
         screen.blit(Enemy2, Enemy2_rect)
+        # Draw a myplane image
+        screen.blit(Myplane, Myplane_rect)
+        #Draw a bullte image
+        screen.blit(bulte, bulte_rect)
+    #Draws the screen contents in hard mode
+    if Hard=="hard":
+        # Draw an image of enemy enemy1
+        screen.blit(Enemy1, Enemy1_rect)
+        # Draw an image of enemy enemy2
+        screen.blit(Enemy2, Enemy2_rect)
+        # Draw an image of enemy enemy3
+        screen.blit(Enemy3, Enemy3_rect)
         # Draw a myplane image
         screen.blit(Myplane, Myplane_rect)
         #Draw a bullte image
