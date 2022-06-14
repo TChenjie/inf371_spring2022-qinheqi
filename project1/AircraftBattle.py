@@ -212,4 +212,20 @@ while True:
             pygame.quit()
             #Exit the system directly
             break
-       
+        #Realize keyboard operation of aircraft
+        if event.type==pygame.KEYDOWN:
+            if event.key==pygame.K_LEFT:
+                if Myplane_rect.x>0:
+                    Myplane_rect.x-=50
+                if Myplane_rect.x<=0:
+                    Myplane_rect.x+=50
+            if event.key==pygame.K_RIGHT:
+                Myplane_rect.x=Myplane_rect.x+50 if Myplane_rect.x>=0 else Myplane_rect.x-50
+            if event.key==pygame.K_UP:
+                Myplane_rect.y=Myplane_rect.y-50 if Myplane_rect.y>=0 else Myplane_rect.y+50
+            if event.key==pygame.K_DOWN:
+                if Myplane_rect.y>0:
+      
+                    Myplane_rect.y+=50
+                if Myplane_rect.y<=0:
+                    Myplane_rect.y-=50
