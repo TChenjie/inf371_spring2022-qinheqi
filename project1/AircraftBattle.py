@@ -61,6 +61,7 @@ screen = pygame.display.set_mode((480, 700))
 Enemy1_rect=pygame.Rect(Enemy_x,0,60,60)
 #define the rect of enemy2
 Enemy2_rect=pygame.Rect(Enemy_x,0,60,60)
+#define the rect of enemy3
 Enemy3_rect=pygame.Rect(Enemy_x,0,60,60)
 bulte_rect=pygame.Rect(100,450,30,69)
 bg1=Background(0)
