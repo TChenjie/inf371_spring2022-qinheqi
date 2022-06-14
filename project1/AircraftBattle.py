@@ -22,6 +22,7 @@ font2 = pygame.font.SysFont("kaiti", 30)
 #Sets the initial score and health
 score = 0   
 fighter = 3
+#define rect of myplane
 Myplane_rect=pygame.Rect(100,500,60,60)
 MY_ENDEVENT1 = pygame.USEREVENT + 1  
 MY_ENDEVENT2 = pygame.USEREVENT + 1  
