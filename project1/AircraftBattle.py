@@ -59,6 +59,7 @@ jiange2=random.randint(60,200)
 screen = pygame.display.set_mode((480, 700))
 #define the rect of enemy1
 Enemy1_rect=pygame.Rect(Enemy_x,0,60,60)
+#define the rect of enemy2
 Enemy2_rect=pygame.Rect(Enemy_x,0,60,60)
 Enemy3_rect=pygame.Rect(Enemy_x,0,60,60)
 bulte_rect=pygame.Rect(100,450,30,69)
