@@ -43,6 +43,7 @@ class Background():
     def update(self):
         #Define background move down
         self.back_rect.y += 1
+        #Insert the next image when the background image is moved down the screen
         if self.back_rect.y >= 700:
             self.back_rect.y = -700
     def draw(self):
