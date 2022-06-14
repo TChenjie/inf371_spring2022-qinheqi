@@ -164,3 +164,17 @@ while True:
     if Enemy3_rect.y>=900:
         Enemy3_rect.y=0
         Enemy3_rect.x=Enemy_x+jiange2+jiange1
+    #Collision detection
+        #敌机与子弹
+    if Enemy1_rect.y+60>=bulte_rect.y and bulte_rect.y+69>=Enemy1_rect.y and Enemy1_rect.y and (Enemy1_rect.x-bulte_rect.x+60>=0 and Enemy1_rect.x-bulte_rect.x<=30):
+        Enemy1_rect.y=0
+        Enemy1_rect.x=Enemy_x
+        score+=1
+    elif Enemy2_rect.y+60>=bulte_rect.y and bulte_rect.y+69>=Enemy2_rect.y and (Enemy2_rect.x-bulte_rect.x+60>=0 and Enemy2_rect.x-bulte_rect.x<=30):
+        Enemy2_rect.y=0
+        Enemy2_rect.x=Enemy_x+jiange1
+        score+=1
+    elif Enemy3_rect.y+60>=bulte_rect.y and bulte_rect.y+69>=Enemy3_rect.y and (Enemy3_rect.x-bulte_rect.x+60>=0 and Enemy3_rect.x-bulte_rect.x<=30):
+        Enemy3_rect.y=0
+        Enemy3_rect.x=Enemy_x+jiange2+jiange1
+        score+=1
