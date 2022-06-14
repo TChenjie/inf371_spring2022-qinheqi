@@ -165,7 +165,7 @@ while True:
         Enemy3_rect.y=0
         Enemy3_rect.x=Enemy_x+jiange2+jiange1
     #Collision detection
-        #敌机与子弹
+        #The enemy plane collided with the bullets
     if Enemy1_rect.y+60>=bulte_rect.y and bulte_rect.y+69>=Enemy1_rect.y and Enemy1_rect.y and (Enemy1_rect.x-bulte_rect.x+60>=0 and Enemy1_rect.x-bulte_rect.x<=30):
         Enemy1_rect.y=0
         Enemy1_rect.x=Enemy_x
