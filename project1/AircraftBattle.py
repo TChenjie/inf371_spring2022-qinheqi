@@ -6,6 +6,7 @@ print("easy\n")
 print("medium\n")
 print("hard\n")
 Hard=input("请选择难度")
+#Get the difficulty selection by getting screen input
 if(Hard=="easy"):
     dif=2
 elif(Hard=="medium"):
