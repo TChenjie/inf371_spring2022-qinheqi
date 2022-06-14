@@ -201,3 +201,7 @@ while True:
     if bulte_rect.y<=0:
         bulte_rect.y=Myplane_rect.y-70
         bulte_rect.x=Myplane_rect.x+15
+    #Exit the game when health reaches zero
+    if fighter==0:
+        pygame.quit()
+	 
