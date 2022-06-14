@@ -178,3 +178,22 @@ while True:
         Enemy3_rect.y=0
         Enemy3_rect.x=Enemy_x+jiange2+jiange1
         score+=1
+    #The enemy planes collided with the planes
+    if (Myplane_rect.x-Enemy1_rect.x<=60 and Myplane_rect.x-Enemy1_rect.x+60>=0) and Myplane_rect.y<=Enemy1_rect.y+60 and Myplane_rect.y>=Enemy1_rect.y-60:
+        Enemy1_rect.y=0
+        Enemy1_rect.x=Enemy_x
+        fighter-=1
+        Myplane_rect.x=200
+        Myplane_rect.y=600
+    if (Myplane_rect.x-Enemy2_rect.x<=60 and Myplane_rect.x-Enemy2_rect.x+60>=0) and Myplane_rect.y<=Enemy2_rect.y+60 and Myplane_rect.y>=Enemy2_rect.y-60:
+        Enemy2_rect.y=0
+        Enemy2_rect.x=Enemy_x+jiange1
+        fighter-=1
+        Myplane_rect.x=200
+        Myplane_rect.y=600
+    if (Myplane_rect.x-Enemy3_rect.x<=60 and Myplane_rect.x-Enemy3_rect.x+60>=0) and Myplane_rect.y<=Enemy3_rect.y+60 and Myplane_rect.y>=Enemy3_rect.y-60:
+        Enemy3_rect.y=0
+        Enemy3_rect.x=Enemy_x+jiange1+jiange2
+        fighter-=1
+        Myplane_rect.x=200
+        Myplane_rect.y=600
