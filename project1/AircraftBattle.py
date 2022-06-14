@@ -225,7 +225,10 @@ while True:
                 Myplane_rect.y=Myplane_rect.y-50 if Myplane_rect.y>=0 else Myplane_rect.y+50
             if event.key==pygame.K_DOWN:
                 if Myplane_rect.y>0:
-      
                     Myplane_rect.y+=50
                 if Myplane_rect.y<=0:
                     Myplane_rect.y-=50
+        #Adjust the difficulty according to the music
+    if event.type == MY_ENDEVENT1:  # Detects the event type that is emitted when playback ends
+        # Draw an image of enemy2
+        screen.blit(Enemy2, Enemy2_rect)
