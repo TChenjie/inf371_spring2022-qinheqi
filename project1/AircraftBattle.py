@@ -82,3 +82,6 @@ Enemy1 = pygame.image.load("2.gif")
 Enemy2 = pygame.image.load("2.gif")
     # 2> Load enemy3 plane image
 Enemy3 = pygame.image.load("2.gif")
+#
+clock = pygame.time.Clock()
+i = 0
