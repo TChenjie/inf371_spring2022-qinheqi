@@ -46,6 +46,7 @@ class Background():
         #Insert the next image when the background image is moved down the screen
         if self.back_rect.y >= 700:
             self.back_rect.y = -700
+    #Draw the background on the screen
     def draw(self):
         screen.blit(self.back,self.back_rect)
 Enemy_x=random.randint(0,300)
