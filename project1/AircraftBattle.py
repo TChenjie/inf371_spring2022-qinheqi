@@ -113,4 +113,11 @@ while True:
  
     bg2.update()
     bg2.draw()
-   
+    #Draws the screen contents in easy mode
+    if Hard=="easy":
+        # 绘制敌机1图像
+        screen.blit(Enemy1, Enemy1_rect)
+        # 绘制英雄图像
+        screen.blit(Myplane, Myplane_rect)
+        #绘制子弹图像
+        screen.blit(bulte, bulte_rect)
