@@ -239,3 +239,6 @@ while True:
             finalresult=font1.render("victory！ %s" , True, (0, 0, 0))
     #Update screen display
     pygame.display.update()
+    #Draws the scoreboard and displays health
+    image_font1 = font1.render("得分为：%s" % score, True, (0, 0, 0))
+    image_font2 = font2.render("生命值为：%s" % fighter, True, (0, 0, 0))
