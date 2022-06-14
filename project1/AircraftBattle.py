@@ -244,3 +244,4 @@ while True:
     image_font2 = font2.render("生命值为：%s" % fighter, True, (0, 0, 0))
     screen.blit(image_font1, (10, 10))#计分器的位置
     screen.blit(image_font2, (5, 30))#生命计数器的位置
+    pygame.quit()
