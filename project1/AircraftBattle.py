@@ -149,3 +149,5 @@ while True:
     Enemy3_rect.y+=dif
     #The bullet movement
     bulte_rect.y-=10
+    # Update screen display
+    pygame.display.update()
