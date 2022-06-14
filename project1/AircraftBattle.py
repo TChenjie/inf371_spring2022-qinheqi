@@ -30,7 +30,7 @@ MY_ENDEVENT1 = pygame.USEREVENT + 1
 MY_ENDEVENT2 = pygame.USEREVENT + 1  
 #define EVENT3
 MY_ENDEVENT3 = pygame.USEREVENT + 1  
-
+#Defining the Background class
 class Background():
     def __init__(self, is_alt = -700):
         self.back = pygame.image.load("3.png")
