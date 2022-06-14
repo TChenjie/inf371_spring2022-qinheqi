@@ -63,6 +63,7 @@ Enemy1_rect=pygame.Rect(Enemy_x,0,60,60)
 Enemy2_rect=pygame.Rect(Enemy_x,0,60,60)
 #define the rect of enemy3
 Enemy3_rect=pygame.Rect(Enemy_x,0,60,60)
+#define the rect of bullte
 bulte_rect=pygame.Rect(100,450,30,69)
 bg1=Background(0)
 bg2=Background(-700)
