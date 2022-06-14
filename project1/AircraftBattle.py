@@ -69,3 +69,6 @@ bulte_rect=pygame.Rect(100,450,30,69)
 bg1=Background(0)
 #Define the Background class Bg2 variable
 bg2=Background(-700)
+# Map aircraft
+    # 1> Loading fighter images
+Myplane = pygame.image.load("1.gif")
