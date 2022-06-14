@@ -37,7 +37,9 @@ class Background():
         self.back = pygame.image.load("3.png")
         #Define rect of background image 
         self.back_rect = self.back.get_rect()
+        #Define the background length
         self.back_rect.y = is_alt
+    #
     def update(self):
         self.back_rect.y += 1
         if self.back_rect.y >= 700:
