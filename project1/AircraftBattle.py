@@ -232,3 +232,6 @@ while True:
     if event.type == MY_ENDEVENT1:  # Detects the event type that is emitted when playback ends
         # Draw an image of enemy2
         screen.blit(Enemy2, Enemy2_rect)
+    if event.type == MY_ENDEVENT2:  # Detects the event type that is emitted when playback ends
+        # Draw an image of enemy3
+        screen.blit(Enemy3, Enemy3_rect)
