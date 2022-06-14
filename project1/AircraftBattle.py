@@ -41,7 +41,7 @@ class Background():
         self.back_rect.y = is_alt
     #Defining update methods
     def update(self):
-        #
+        #Define background move down
         self.back_rect.y += 1
         if self.back_rect.y >= 700:
             self.back_rect.y = -700
