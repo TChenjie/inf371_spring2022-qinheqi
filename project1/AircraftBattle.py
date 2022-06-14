@@ -237,3 +237,5 @@ while True:
         screen.blit(Enemy3, Enemy3_rect)
     if event.type == MY_ENDEVENT3:  # Detects the event type that is emitted when playback ends
             finalresult=font1.render("victory！ %s" , True, (0, 0, 0))
+    #Update screen display
+    pygame.display.update()
