@@ -72,3 +72,6 @@ bg2=Background(-700)
 # Map aircraft
     # 1> Loading fighter images
 Myplane = pygame.image.load("1.gif")
+# Draw bullet image
+    # 1> Loading bullet images
+bulte = pygame.image.load("4.gif")
