@@ -33,6 +33,7 @@ MY_ENDEVENT3 = pygame.USEREVENT + 1
 #Defining the Background class
 class Background():
     def __init__(self, is_alt = -700):
+        #Define background image
         self.back = pygame.image.load("3.png")
         self.back_rect = self.back.get_rect()
         self.back_rect.y = is_alt
