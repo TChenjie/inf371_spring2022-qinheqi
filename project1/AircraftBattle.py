@@ -85,3 +85,10 @@ Enemy3 = pygame.image.load("2.gif")
 #
 clock = pygame.time.Clock()
 i = 0
+while True:
+
+    # Set the screen refresh frame rate
+    clock.tick(360)
+    i += 1
+    # Specifies how often code inside the body of the loop executes
+    clock.tick(360)
