@@ -67,4 +67,5 @@ Enemy3_rect=pygame.Rect(Enemy_x,0,60,60)
 bulte_rect=pygame.Rect(100,450,30,69)
 #Define the Background class Bg1 variable
 bg1=Background(0)
+#Define the Background class Bg2 variable
 bg2=Background(-700)
