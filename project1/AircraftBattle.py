@@ -35,6 +35,7 @@ class Background():
     def __init__(self, is_alt = -700):
         #Define background image
         self.back = pygame.image.load("3.png")
+        #Define rect of background image 
         self.back_rect = self.back.get_rect()
         self.back_rect.y = is_alt
     def update(self):
