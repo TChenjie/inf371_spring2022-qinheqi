@@ -53,6 +53,7 @@ class Background():
 Enemy_x=random.randint(0,300)
 #Defines the refresh interval between remaining enemy aircraft and previous enemy aircraft
 jiange1=random.randint(60,200)
+#Defines the refresh interval between remaining enemy aircraft and previous enemy aircraft
 jiange2=random.randint(60,200)
 screen = pygame.display.set_mode((480, 700))
 Enemy1_rect=pygame.Rect(Enemy_x,0,60,60)
