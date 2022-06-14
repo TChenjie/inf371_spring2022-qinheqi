@@ -16,6 +16,7 @@ elif(Hard=="hard"):
 else:
     print("input error !")
     pygame.quit()
+#Define font1
 font1 = pygame.font.SysFont("kaiti", 30)
 font2 = pygame.font.SysFont("kaiti", 30)
 score = 0   
