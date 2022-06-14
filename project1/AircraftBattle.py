@@ -30,6 +30,21 @@ MY_ENDEVENT1 = pygame.USEREVENT + 1
 MY_ENDEVENT2 = pygame.USEREVENT + 1  
 #define EVENT3
 MY_ENDEVENT3 = pygame.USEREVENT + 1  
+
+#Play background music according to difficulty
+if Hard=="easy":
+    bgm1= pygame.mixer.music.load("zhou.mp3")
+    pygame.mixer.music.play()
+    pygame.mixer.music.set_endevent(MY_ENDEVENT1)
+if Hard=="medium":
+    bgm2= pygame.mixer.music.load("huoyuanjia.mp3")
+    pygame.mixer.music.play()#播放音乐
+    pygame.mixer.music.set_endevent(MY_ENDEVENT2)
+if Hard=="hard":
+    bgm3= pygame.mixer.music.load("CompendiumOfMateriaMedica.mp3")
+    pygame.mixer.music.play()#播放音乐
+    pygame.mixer.music.set_endevent(MY_ENDEVENT3)
+
 #Defining the Background class
 class Background():
     def __init__(self, is_alt = -700):
@@ -92,3 +107,10 @@ while True:
     i += 1
     # Specifies how often code inside the body of the loop executes
     clock.tick(360)
+    #background motion
+    bg1.update()
+    bg1.draw()
+ 
+    bg2.update()
+    bg2.draw()
+   
