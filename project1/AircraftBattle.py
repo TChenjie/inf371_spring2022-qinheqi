@@ -204,4 +204,12 @@ while True:
     #Exit the game when health reaches zero
     if fighter==0:
         pygame.quit()
-	 
+    for event in pygame.event.get():
+
+        #Determine whether the user has clicked the close button 
+        if event.type == pygame.QUIT:
+            print("退出游戏...")
+            pygame.quit()
+            #Exit the system directly
+            break
+       
