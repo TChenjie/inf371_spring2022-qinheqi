@@ -151,3 +151,16 @@ while True:
     bulte_rect.y-=10
     # Update screen display
     pygame.display.update()
+    #Judge refresh enemy position
+    Enemy_x=random.randint(0,300)
+    jiange1=random.randint(60,200)
+    jiange2=random.randint(60,200)
+    if Enemy1_rect.y>=900:
+        Enemy1_rect.y=0
+        Enemy1_rect.x=Enemy_x
+    if Enemy2_rect.y>=900:
+        Enemy2_rect.y=0
+        Enemy2_rect.x=Enemy_x+jiange1
+    if Enemy3_rect.y>=900:
+        Enemy3_rect.y=0
+        Enemy3_rect.x=Enemy_x+jiange2+jiange1
