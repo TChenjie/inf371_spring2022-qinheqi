@@ -197,3 +197,7 @@ while True:
         fighter-=1
         Myplane_rect.x=200
         Myplane_rect.y=600
+    #Determine the reload position
+    if bulte_rect.y<=0:
+        bulte_rect.y=Myplane_rect.y-70
+        bulte_rect.x=Myplane_rect.x+15
