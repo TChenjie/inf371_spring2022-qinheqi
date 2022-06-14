@@ -235,3 +235,5 @@ while True:
     if event.type == MY_ENDEVENT2:  # Detects the event type that is emitted when playback ends
         # Draw an image of enemy3
         screen.blit(Enemy3, Enemy3_rect)
+    if event.type == MY_ENDEVENT3:  # Detects the event type that is emitted when playback ends
+            finalresult=font1.render("victory！ %s" , True, (0, 0, 0))
