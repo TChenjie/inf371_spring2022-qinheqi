@@ -143,8 +143,9 @@ while True:
         screen.blit(Myplane, Myplane_rect)
         #Draw a bullte image
         screen.blit(bulte, bulte_rect)
-    #
+    #The enemy plane movement
     Enemy1_rect.y+=dif
     Enemy2_rect.y+=dif
     Enemy3_rect.y+=dif
-    
+    #The bullet movement
+    bulte_rect.y-=10
